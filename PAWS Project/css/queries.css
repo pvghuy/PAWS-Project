@@ -1,0 +1,197 @@
+/* ########### */
+/* UNDER 1232px */
+/* ########### */
+
+@media (max-width: 77em) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .heading-description {
+    font-size: 3.6rem;
+  }
+
+  .section-how .container {
+    gap: 4.8rem;
+  }
+}
+
+/* ########### */
+/* UNDER 1132px */
+/* ########### */
+
+@media (max-width: 70.75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .form-part {
+    /* display: inline-block; */
+    grid-column: 1;
+    grid-column: span 2;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+
+/* ########### */
+/* UNDER 960px */
+/* ########### */
+
+@media (max-width: 60em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-hero {
+    background-position: right;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-description {
+    font-size: 3rem;
+  }
+
+  .section-featured,
+  .section-how,
+  .section-showcase,
+  .section-cta,
+  .footer {
+    padding: 4.8rem 0;
+  }
+
+  .section-showcase .heading-secondary {
+    margin-top: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+/* ########### */
+/* UNDER 736px */
+/* ########### */
+
+@media (max-width: 46em) {
+  .nav-link {
+    font-size: 1.4rem;
+  }
+
+  .nav-list {
+    gap: 1.6rem;
+  }
+
+  .link {
+    line-height: 1;
+    padding: 1rem 1.2rem;
+  }
+
+  .hero-text-box {
+    position: absolute;
+    width: 45%;
+    top: 25%;
+    left: 10%;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-description {
+    font-size: 2.4rem;
+  }
+
+  .featured-logo {
+    height: 5.2rem;
+  }
+
+  .featured-logo:nth-child(odd) {
+    height: 1.6rem;
+  }
+
+  .section-how .container {
+    gap: 3.2rem;
+  }
+
+  .step-img {
+    width: 60%;
+  }
+
+  .showcase {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-part {
+    grid-column: 1;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 4fr 3fr;
+  }
+}
+
+@media (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-list {
+    gap: 1.2rem;
+  }
+
+  .paws-logo-img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .paws-logo-text {
+    font-size: 2rem;
+  }
+
+  .hero-text-box .heading-primary,
+  .hero-text-box .heading-description {
+    color: black;
+  }
+
+  .featured-logo {
+    height: 4.4rem;
+  }
+
+  .featured-logo:nth-child(odd) {
+    height: 1.4rem;
+  }
+
+  .section-how .container {
+    gap: 2.4rem;
+  }
+
+  .step-img {
+    width: 80%;
+  }
+
+  .cta-img-box {
+    display: none;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 207, 184, 0.85),
+        rgba(255, 215, 197, 0.85)
+      ),
+      url(../img/form-img1.jpg);
+    background-size: cover;
+  }
+
+  .cta-text-box {
+    padding: 4.8rem 8rem;
+  }
+}
