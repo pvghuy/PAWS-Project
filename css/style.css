@@ -184,6 +184,7 @@
 .section-cta {
   padding: 6.4rem 0;
   margin-bottom: 6.4rem;
+  position: relative;
 }
 
 .cta {
@@ -304,4 +305,49 @@
 .footer-text {
   font-size: 1.4rem;
   line-height: 1.8;
+}
+
+.wrong {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.none {
+  display: none;
+}
+
+/* ### POPUP */
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.popup-content {
+  padding: 3.6rem 0 3.6rem 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #ffcdb6, #ffd7c5);
+  transform: translate(12.5%, 12.5%);
+}
+
+.form-popup .heading-secondary {
+  margin-bottom: 2.4rem;
+}
+
+.paws-logo-popup {
+  height: 8rem;
+  width: 8rem;
+  margin-bottom: 2.4rem;
 }

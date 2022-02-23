@@ -23,6 +23,7 @@ body {
   font-weight: 400;
   color: #333;
   /* overflow-x: hidden; */
+  /* position: relative; */
 }
 
 .container {
@@ -153,7 +154,7 @@ body {
 .btn--form {
   background-color: #665249;
   color: #fff5f0;
-  align-self: end;
+  /* align-self: end; */
   padding: 1.2rem;
   margin-top: 1.2rem;
 }
