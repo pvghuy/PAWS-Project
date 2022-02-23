@@ -194,7 +194,7 @@
                 Nếu bạn muốn nhận nuôi các bé, hoặc muốn ủng hộ PAWS. Hãy để lại
                 cho PAWS thông tin quý giá của bạn nhé!
               </p>
-              <form action="#" class="cta-form" data-netlify="true">
+              <form action="/" class="cta-form" id="form" data-netlify="true">
                 <div class="form-part">
                   <label for="select">Bạn muốn "Nhận nuôi" hay "Ủng hộ"?</label>
                   <select name="" id="select">
@@ -202,40 +202,30 @@
                     <option value="adopt">Nhận nuôi</option>
                     <option value="donate">Ủng hộ</option>
                   </select>
+                  <p class="wrong none">Vui lòng chọn 1 trong 2 nhé!</p>
                 </div>
 
                 <div>
                   <label for="name">Tên của bạn là gì?</label>
-                  <input
-                    type="text"
-                    placeholder="Mèo Thị Meo"
-                    id="name"
-                    required
-                  />
+                  <input type="text" placeholder="Mèo Thị Meo" id="name" />
+                  <p class="wrong none">Vui lòng nhập tên ạ!</p>
                 </div>
 
                 <div>
-                  <label for="email">Email của bạn là gì</label>
-                  <input
-                    type="email"
-                    placeholder="meo@gmail.com"
-                    id="mail"
-                    required
-                  />
+                  <label for="email">Email của bạn là gì?</label>
+                  <input type="email" placeholder="meo@gmail.com" id="mail" />
+                  <p class="wrong none">Vui lòng nhập Email ạ!</p>
                 </div>
 
                 <div>
                   <label for="phone">Số điện thoại của bạn?</label>
-                  <input
-                    type="text"
-                    placeholder="0123456789"
-                    id="phone"
-                    required
-                    minlength="10"
-                  />
+                  <input type="text" placeholder="0123456789" id="phone" />
+                  <p class="wrong none">Vui lòng nhập số điện thoại ạ!</p>
                 </div>
 
-                <button class="btn btn--form">Gửi</button>
+                <button type="submit" class="btn btn--form" id="submit">
+                  Gửi
+                </button>
               </form>
             </div>
             <div class="cta-img-box" role="img" aria-label="Baby Cat"></div>
@@ -270,6 +260,20 @@
         </p>
       </div>
     </footer>
+    <div class="popup none">
+      <div class="popup-content">
+        <p class="heading-secondary">
+          Cảm ơn những thông tin quý giá của bạn đã dành cho chúng mình.
+        </p>
+        <p class="heading-secondary">PAWS xin chân thành cảm ơn bạn nhiều ạ!</p>
+        <img
+          class="paws-logo-popup"
+          src="./img/favicon-192.png"
+          alt="PAWS logo"
+        />
+        <button class="btn btn--form btn--popup">Quay lại</button>
+      </div>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -278,5 +282,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
