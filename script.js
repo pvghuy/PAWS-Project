@@ -57,7 +57,13 @@ submit.addEventListener("click", (e) => {
 
   submit.blur();
 
-  if (arr.every((str) => (str = "none")) && select.value != "") {
+  if (
+    arr.every((str) => (str = "none")) &&
+    select.value != "" &&
+    fullName.value != "" &&
+    email.value != "" &&
+    phone.value != ""
+  ) {
     popup.classList.toggle("none");
   }
 });
